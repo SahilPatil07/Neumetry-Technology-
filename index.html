@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>July 2024 Internship Student Registration Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Student Registration</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">July 2024 Internship Student Registration Form</h2>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" aria-label="Full Name" required>
+                        <div class="invalid-feedback">Full Name can only contain letters and spaces.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-label="Email" required>
+                        <div class="invalid-feedback">Email must be a valid email address.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobileNumber">Mobile Number</label>
+                        <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" aria-label="Mobile Number" required>
+                        <div class="invalid-feedback">Mobile Number must be a valid 10-digit number.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Birthdate</label>
+                        <input type="date" class="form-control" id="birthdate" name="birthdate" aria-label="Birthdate" required>
+                        <div class="invalid-feedback">Birthdate cannot be blank and must be a valid date.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="collegeName">College Name</label>
+                        <input type="text" class="form-control" id="collegeName" name="collegeName" aria-label="College Name" required>
+                        <div class="invalid-feedback">College Name cannot be blank.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="education">Education</label>
+                        <input type="text" class="form-control" id="education" name="education" aria-label="Education" required>
+                        <div class="invalid-feedback">Education cannot be blank.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="graduationYear">Graduation Year</label>
+                        <input type="number" class="form-control" id="graduationYear" name="graduationYear" aria-label="Graduation Year" required>
+                        <div class="invalid-feedback">Graduation Year must be a valid year.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="graduationPercentage">Graduation Percentage</label>
+                        <input type="number" class="form-control" id="graduationPercentage" name="graduationPercentage" step="0.01" aria-label="Graduation Percentage" required>
+                        <div class="invalid-feedback">Graduation Percentage must be between 0 and 100.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+                <div id="thankYouMessage" class="alert alert-success mt-4 d-none" role="alert">
+                    Thank you for registering!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
